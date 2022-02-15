@@ -1,4 +1,4 @@
-@use "ressources/global.scss";
+@import "ressources/global.scss";
 
 .App {
   width: 1240px;
@@ -8,4 +8,6 @@
 #root {
   display: flex;
   justify-content: center;
+
+  padding-bottom: 25px;
 }
