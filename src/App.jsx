@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Header from "./components/Header/header";
 import Home from "./components/Home/home";
+import NotFound from "./components/404/404";
 import './App.scss';
 
 function App() {
@@ -15,7 +16,9 @@ function App() {
         <Header />
 
         <Routes>
+          <Route path="/VincentAllio_11_14022022/" element={<Home />} />
           <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
     </div>
