@@ -24,11 +24,22 @@
                 line-height: 25.67px;
                 color: $colorPrimary;
             }
+
+            &__tagsTable {
+                display: flex;
+                margin-top: 20px;
+
+                & :not(:last-child) {
+                    margin-right: 10px;
+                }
+            }
         }
 
         &__host {
             display: flex;
             align-items: center;
+            justify-content: end;
+            margin-bottom: 24px;
 
             &__name {
                 font-family: "Montserrat";

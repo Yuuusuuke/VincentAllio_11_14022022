@@ -1,0 +1,12 @@
+@import "../../ressources/global.scss";
+
+.noteTable {
+    & :nth-child(n) {
+        font-size: 30px;
+        color: $colorPrimary;
+    }
+
+    & :not(:first-child) {
+        margin-left: 2px;
+    }
+}

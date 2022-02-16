@@ -4,7 +4,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAngleDown} from "@fortawesome/free-solid-svg-icons";
 
 function Dropdown(props){
-    const [dropdownStatus, setDropdownStatus] = useState("");
+    const [dropdownStatus, setDropdownStatus] = useState(props.state != null ? props.state : "");
     console.log(props.description);
 
     var description;
