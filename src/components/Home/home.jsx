@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import "./home.scss";
 import Card from "../Card/card";
-import data from "../../ressources/logement.json";
+import {dataContext} from "../../context/dataContext";
 import TopPage from "../TopPage/toppage";
 
 function Home(){
+    const data = useContext(dataContext);
     return(
         <>
             <TopPage title="Chez vous, partout et ailleurs" page="home" />

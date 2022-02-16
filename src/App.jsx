@@ -10,6 +10,7 @@ import NotFound from "./components/404/404";
 import About from "./components/About/about";
 import Footer from "./components/Footer/footer";
 import './App.scss';
+import { DataProvider } from './context/dataContext';
 
 function App() {
   return (
@@ -18,12 +19,14 @@ function App() {
       <Router>
         <Header />
 
+          <DataProvider>
         <Routes>
           <Route path='/about' element={<About />} />
-          <Route path="/VincentAllio_11_14022022/" element={<Home />} />
-          <Route path="/" element={<Home />} />
+            <Route path="/VincentAllio_11_14022022/" element={<Home />} />
+            <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+          </DataProvider>
       </Router>
       
     </div>
