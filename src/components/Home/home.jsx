@@ -1,16 +1,13 @@
 import React from 'react';
 import "./home.scss";
 import Card from "../Card/card";
-import data from "../../ressources/logement.json"
+import data from "../../ressources/logement.json";
+import TopPage from "../TopPage/toppage";
 
 function Home(){
-    console.log(data);
     return(
         <>
-            <section className='home__topPage'>
-                <h1 className='home__topPage__title'>Chez vous, partout et ailleurs</h1>
-            </section>
-
+            <TopPage title="Chez vous, partout et ailleurs" page="home" />
             <section className='home__table'>
                 {data.map((location, index) => 
                     <Card location={location} key={index} />

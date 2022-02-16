@@ -1,0 +1,58 @@
+@import "../../ressources/global.scss";
+@import "../../ressources/keyframes.scss";
+
+.dropdown {
+    width: 1023px;
+    margin-top: 33px;
+
+    &__header {
+        background-color: $colorPrimary;
+        border-radius: 5px;
+        padding: 5px 16px 7px 18px;
+
+        display: flex;
+        align-items: center;
+
+        color: white;
+
+        cursor: pointer;
+
+        &__title {
+            flex: 1;
+            font-family: "Montserrat";
+            font-weight: 500;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 34.22px;
+        }
+
+        &__icon {
+            font-size: 23px;
+            transition: transform .5s ease-in-out;
+        }
+    }
+
+    &__description {
+        display: none;
+        background-color: $colorBackground;
+        border-radius: 0 0 5px 5px;
+        padding: 36px 18px 10px 18px;
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 34.22px;
+        color: $colorPrimary;
+
+        transform-origin: top center;
+    }
+
+    &.open &__header__icon {
+        transform: rotateZ(180deg);
+    }
+
+    &.open &__description {
+        display: block;
+        animation: fadein 0.5s both;
+    }
+}
