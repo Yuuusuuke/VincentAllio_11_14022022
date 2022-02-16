@@ -1,0 +1,87 @@
+@import "../../ressources/global.scss";
+
+.location {
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__title {
+            &__name {
+                font-family: "Montserrat";
+                font-weight: 500;
+                font-style: normal;
+                font-size: 36px;
+                line-height: 51.34px;
+                color: $colorPrimary;
+            }
+
+            &__place {
+                font-family: "Montserrat";
+                font-weight: 500;
+                font-style: normal;
+                font-size: 18px;
+                line-height: 25.67px;
+                color: $colorPrimary;
+            }
+        }
+
+        &__host {
+            display: flex;
+            align-items: center;
+
+            &__name {
+                font-family: "Montserrat";
+                font-weight: 500;
+                font-style: normal;
+                font-size: 18px;
+                line-height: 25.67px;
+                color: $colorPrimary;
+
+                white-space: pre-wrap;
+                text-align: end;
+                margin-right: 10px;
+            }
+
+            &__picture {
+                border-radius: 50%;
+                height: 64px;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &__dropdown {
+            width: 100%;
+            max-width: 582px;
+
+            @media screen and (max-width: 1400px) {
+                max-width: 450px;
+            }
+
+            @media screen and (max-width: 992px) {
+                max-width: none;
+            }
+        }
+
+        & .dropdown__header {
+            border-radius: 10px;
+            padding: 13px 18px 13px 20px;
+
+            &__title {
+                font-size: 18px;
+                line-height: 25.67px;
+            }
+        }
+
+        & .dropdown__description {
+            font-size: 18px;
+            line-height: 25.67px;
+            border-radius: 0 0 10px 10px;
+        }
+    }
+}

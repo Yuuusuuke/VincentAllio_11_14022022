@@ -1,19 +1,25 @@
 @import "ressources/global.scss";
 
-* {
+*,
+p,
+h1,
+h2 {
   margin: 0;
+  padding: 0;
 }
 
 a {
   color: $colorPrimary;
   text-decoration: none;
+
+  &:hover {
+    color: $colorPrimary;
+  }
 }
 
 .App {
-  width: 1240px;
   padding-bottom: 50px;
   min-height: 100vh;
-
 }
 
 #root {

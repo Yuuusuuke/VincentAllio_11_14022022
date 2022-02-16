@@ -2,7 +2,8 @@
 @import "../../ressources/keyframes.scss";
 
 .dropdown {
-    width: 1023px;
+    width: 100%;
+    max-width: 1023px;
     margin-top: 33px;
 
     &__header {
@@ -24,6 +25,7 @@
             font-style: normal;
             font-size: 24px;
             line-height: 34.22px;
+            margin: 0;
         }
 
         &__icon {
@@ -43,6 +45,7 @@
         font-size: 24px;
         line-height: 34.22px;
         color: $colorPrimary;
+        white-space: pre-wrap;
 
         transform-origin: top center;
     }
