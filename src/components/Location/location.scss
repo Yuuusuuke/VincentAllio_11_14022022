@@ -6,12 +6,12 @@
         align-items: center;
         justify-content: space-between;
 
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 800px) {
             flex-direction: column;
         }
 
         &__title {
-            @media screen and (max-width: 700px) {
+            @media screen and (max-width: 800px) {
                 align-self: flex-start;
             }
 
@@ -23,7 +23,7 @@
                 line-height: 51.34px;
                 color: $colorPrimary;
 
-                @media screen and (max-width: 700px) {
+                @media screen and (max-width: 800px) {
                     font-size: 18px;
                     line-height: 25.67px;
                 }
@@ -37,7 +37,7 @@
                 line-height: 25.67px;
                 color: $colorPrimary;
 
-                @media screen and (max-width: 700px) {
+                @media screen and (max-width: 800px) {
                     font-size: 14px;
                     line-height: 19.96px;
                 }
@@ -45,7 +45,12 @@
 
             &__tagsTable {
                 display: flex;
-                margin-top: 20px;
+                flex-wrap: wrap;
+                margin-top: 15px;
+
+                &>div {
+                    margin-top: 5px;
+                }
 
                 & :not(:last-child) {
                     margin-right: 10px;
@@ -54,7 +59,7 @@
         }
 
         &__details {
-            @media screen and (max-width: 700px) {
+            @media screen and (max-width: 800px) {
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
@@ -69,7 +74,7 @@
             justify-content: end;
             margin-bottom: 24px;
 
-            @media screen and (max-width: 700px) {
+            @media screen and (max-width: 800px) {
                 margin: 0;
                 order: 2;
             }
@@ -86,7 +91,7 @@
                 text-align: end;
                 margin-right: 10px;
 
-                @media screen and (max-width: 700px) {
+                @media screen and (max-width: 800px) {
                     font-size: 12px;
                     line-height: 17.11px;
                 }
@@ -96,7 +101,7 @@
                 border-radius: 50%;
                 height: 64px;
 
-                @media screen and (max-width: 700px) {
+                @media screen and (max-width: 800px) {
                     height: 32px;
                 }
             }
