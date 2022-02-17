@@ -22,5 +22,10 @@
         color: white;
 
         margin-top: 25px;
+
+        @media screen and (max-width: 805px) {
+            font-size: 12px;
+            line-height: 17.11px;
+        }
     }
 }

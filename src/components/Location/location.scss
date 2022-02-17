@@ -6,7 +6,15 @@
         align-items: center;
         justify-content: space-between;
 
+        @media screen and (max-width: 700px) {
+            flex-direction: column;
+        }
+
         &__title {
+            @media screen and (max-width: 700px) {
+                align-self: flex-start;
+            }
+
             &__name {
                 font-family: "Montserrat";
                 font-weight: 500;
@@ -14,6 +22,11 @@
                 font-size: 36px;
                 line-height: 51.34px;
                 color: $colorPrimary;
+
+                @media screen and (max-width: 700px) {
+                    font-size: 18px;
+                    line-height: 25.67px;
+                }
             }
 
             &__place {
@@ -23,6 +36,11 @@
                 font-size: 18px;
                 line-height: 25.67px;
                 color: $colorPrimary;
+
+                @media screen and (max-width: 700px) {
+                    font-size: 14px;
+                    line-height: 19.96px;
+                }
             }
 
             &__tagsTable {
@@ -35,11 +53,26 @@
             }
         }
 
+        &__details {
+            @media screen and (max-width: 700px) {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 16px;
+            }
+        }
+
         &__host {
             display: flex;
             align-items: center;
             justify-content: end;
             margin-bottom: 24px;
+
+            @media screen and (max-width: 700px) {
+                margin: 0;
+                order: 2;
+            }
 
             &__name {
                 font-family: "Montserrat";
@@ -52,11 +85,20 @@
                 white-space: pre-wrap;
                 text-align: end;
                 margin-right: 10px;
+
+                @media screen and (max-width: 700px) {
+                    font-size: 12px;
+                    line-height: 17.11px;
+                }
             }
 
             &__picture {
                 border-radius: 50%;
                 height: 64px;
+
+                @media screen and (max-width: 700px) {
+                    height: 32px;
+                }
             }
         }
     }

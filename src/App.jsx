@@ -17,7 +17,7 @@ import { DataProvider } from './context/dataContext';
 function App() {
   return (
     <>
-    <div className="App container">
+    <div className="App container-lg">
       <Router>
         <Header />
 

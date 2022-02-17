@@ -9,6 +9,11 @@
     align-items: center;
     justify-content: center;
 
+    @media screen and (max-width: 805px) {
+        height: 111px;
+        border-radius: 10px;
+    }
+
     &__title {
         font-family: "Montserrat";
         font-weight: 500;
@@ -16,6 +21,11 @@
         font-size: 48px;
         line-height: 68.45px;
         color: white;
+
+        @media screen and (max-width: 805px) {
+            font-size: 24px;
+            line-height: 24px;
+        }
     }
 
     &.home {
@@ -24,5 +34,10 @@
 
     &.about {
         background-image: linear-gradient(rgb(0, 0, 0, .25), rgb(0, 0, 0, .25)), url("../../ressources/images/backgroundAbout.png");
+
+        @media screen and (max-width: 805px) {
+            height: 223px;
+            border-radius: 25px;
+        }
     }
 }
