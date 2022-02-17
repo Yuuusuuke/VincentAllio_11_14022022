@@ -9,10 +9,10 @@ function Note(props){
     var content = [];
     for(var i = 1; i < 6; i++){
         if(i <= props.value){
-            content.push(<FontAwesomeIcon icon={faStar} />);
+            content.push(<FontAwesomeIcon key={i} icon={faStar} />);
         }
         else{
-            content.push(<FontAwesomeIcon icon={faStarRegular} />);
+            content.push(<FontAwesomeIcon key={i} icon={faStarRegular} />);
         }
     }
 

@@ -4,6 +4,7 @@ import { dataContext } from "../../context/dataContext";
 import Dropdown from "../Dropdown/dropdown";
 import Tag from "../Tag/tag";
 import Note from "../Note/note";
+import Carousel from "../Carousel/carousel";
 import "./location.scss";
 
 function Location(){
@@ -17,6 +18,7 @@ function Location(){
 
     return(
         <>
+            <Carousel pictures={location.pictures} />
             <section className="location">
                 <header className="location__header">
                     <div className="location__header__title">

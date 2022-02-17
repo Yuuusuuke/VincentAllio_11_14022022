@@ -1,0 +1,60 @@
+.carousel {
+    display: flex;
+    width: 100%;
+    height: 415px;
+    position: relative;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 805px) {
+        height: 255px;
+    }
+
+    &__picture {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        border-radius: 25px;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        color: white;
+        font-size: 46px;
+        filter: drop-shadow(1px 0px 3px black);
+
+        @media screen and (max-width: 805px) {
+            font-size: 20px;
+        }
+
+        &--previous {
+            left: 2%;
+            transform: rotateZ(90deg) translateX(-50%);
+
+        }
+
+        &--next {
+            right: 2%;
+            transform: rotateZ(-90deg) translateX(50%);
+        }
+    }
+
+    &__count {
+        position: absolute;
+        bottom: 25px;
+        right: 50%;
+        transform: translateX(50%);
+        color: white;
+        text-shadow: (1px 0px 3px black);
+
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 25.67px;
+
+        @media screen and (max-width: 805px) {
+            font-size: 16px;
+        }
+    }
+}
