@@ -38,6 +38,10 @@
             right: 2%;
             transform: rotateZ(-90deg) translateX(50%);
         }
+
+        &.hide {
+            display: none;
+        }
     }
 
     &__count {

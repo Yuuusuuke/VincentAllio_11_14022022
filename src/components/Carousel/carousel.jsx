@@ -22,8 +22,8 @@ function Carousel(props){
     return(
         <div className="carousel">
             <img className="carousel__picture" src={props.pictures[currentPicture-1]} alt={`number ${currentPicture}`} />
-            <FontAwesomeIcon className="carousel__icon carousel__icon--previous" onClick={() => changePicture(currentPicture-1)} icon={faAngleDown} />
-            <FontAwesomeIcon className="carousel__icon carousel__icon--next" onClick={() => changePicture(currentPicture+1)} icon={faAngleDown} />
+            <FontAwesomeIcon className={`carousel__icon carousel__icon--previous ${props.pictures.length === 1 && "hide"}`} onClick={() => changePicture(currentPicture-1)} icon={faAngleDown} />
+            <FontAwesomeIcon className={`carousel__icon carousel__icon--next ${props.pictures.length === 1 && "hide"}`} onClick={() => changePicture(currentPicture+1)} icon={faAngleDown} />
             <p className="carousel__count">{currentPicture}/{props.pictures.length}</p>
         </div>
     );
