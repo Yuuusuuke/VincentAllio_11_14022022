@@ -11,8 +11,6 @@ function Location(){
     const {id} = useParams()
     const data = useContext(dataContext);
     const location = data.find(element => element.id === id);
-    console.log(data);
-    console.log(location);
 
     const nameHost = location.host.name.split(" ");
 
@@ -30,7 +28,7 @@ function Location(){
                     </div>
                     <div className="location__header__details">
                         <div className="location__header__host">
-                            <p className="location__header__host__name">{nameHost.reduce((result, item) => (`${result}\n${item}`))}</p>
+                            <p className="location__header__host__name">{nameHost.reduce((result, item) => (`${result}\n${item}`))}</p> {/** Cut name to add a line break between **/}
                             <img className="location__header__host__picture" src={location.host.picture} alt="host" />
                         </div>
                         <Note value={location.rating} />

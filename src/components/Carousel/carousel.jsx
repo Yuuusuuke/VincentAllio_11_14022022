@@ -3,9 +3,13 @@ import "./carousel.scss";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAngleDown} from "@fortawesome/free-solid-svg-icons";
 
+/**
+ * 
+ * @param {Array} pictures
+ * 
+ */
 function Carousel(props){
     const [currentPicture, setCurrentPicture] = useState(1);
-    console.log(currentPicture);
 
     function changePicture(newIndex){
         if(newIndex > props.pictures.length){

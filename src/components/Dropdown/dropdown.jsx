@@ -3,9 +3,15 @@ import "./dropdown.scss";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAngleDown} from "@fortawesome/free-solid-svg-icons";
 
+/**
+ * 
+ * @param {string} state
+ * @param {string} title
+ * @param {Array or string} description
+ * 
+ */
 function Dropdown(props){
     const [dropdownStatus, setDropdownStatus] = useState(props.state != null ? props.state : "");
-    console.log(props.description);
 
     var description;
 
@@ -18,7 +24,6 @@ function Dropdown(props){
         description = props.description;
     }
 
-    console.log(description);
     return(
         <div className={`dropdown ${dropdownStatus}`}>
             <div className="dropdown__header" onClick={() => {setDropdownStatus((dropdownStatus === "" ? "open" : ""))}}>

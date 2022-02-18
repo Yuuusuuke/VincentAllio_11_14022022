@@ -6,6 +6,7 @@ import logo from "../../ressources/images/logo.jpg";
 function Header(){
     const [currentPage, setCurrentPage] = useState("");
     const location = useLocation(); // Send the current pathname (Hook from react router dom)
+    
     useEffect(()=>{
         setCurrentPage(location.pathname);
     }, [location.pathname]);

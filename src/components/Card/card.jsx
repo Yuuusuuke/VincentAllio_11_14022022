@@ -2,6 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./card.scss";
 
+/**
+ * 
+ * @param {Object} location
+ * 
+ */
 function Card(props){
     return(
         <Link to={`/location/${props.location.id}`} className="card" key={props.location.id}>
