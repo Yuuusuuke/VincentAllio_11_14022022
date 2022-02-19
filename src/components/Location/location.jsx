@@ -12,6 +12,8 @@ function Location(){
     const data = useContext(dataContext);
     const location = data.find(element => element.id === id);
 
+    (!location) && (window.location.href = "/404") // Redirect to 404 page if it doesn't find an object in json
+
     const nameHost = location.host.name.split(" ");
 
     return(
