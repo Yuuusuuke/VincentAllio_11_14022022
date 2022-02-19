@@ -37,10 +37,10 @@ function Location(){
 
                 <div className="location__content">
                     <div className="location__content__dropdown">
-                        <Dropdown title="Description" description={location.description} state="open" />
+                        <Dropdown title="Description" description={location.description} />
                     </div>
                     <div className="location__content__dropdown">
-                        <Dropdown title="Equipements" description={location.equipments} state="open" /> 
+                        <Dropdown title="Equipements" description={location.equipments} /> 
                     </div>
                 </div>
             </section>
